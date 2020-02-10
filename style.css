@@ -1,0 +1,126 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  background: #1c92d2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #f2fcfe, #1c92d2);
+  background: -o-linear-gradient(left, #f2fcfe, #1c92d2);
+  background: linear-gradient(to right, #f2fcfe, #1c92d2);
+}
+
+h1 {
+  background: #2980b9;
+  color: white;
+  margin: 0px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h1:hover {
+  background: white;
+  color: black;
+}
+h1:hover #toggleForm {
+  color: #e74c3c;
+}
+#toggleForm {
+  float: right;
+  text-align: center;
+  color: white;
+  width: 0px;
+  padding-right: 20px;
+  display: inline-block;
+  transition: 0.2s linear;
+}
+
+#toggleForm:hover {
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 0;
+  line-height: 40px;
+  color: #666;
+}
+
+li:nth-child(2n) {
+  background: #e4e3e3;
+}
+
+li button {
+  background: #e74c3c;
+  height: 40px;
+  float: right;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+  outline: none;
+  border: none;
+}
+
+li:hover button {
+  width: 40px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+#toggleForm:hover {
+  cursor: pointer;
+}
+
+input {
+  font-size: 18px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  color: #2980b9;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+  background: white;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+.container {
+  background: #f7f7f7;
+  width: 360px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.complete {
+  color: gray !important;
+  text-decoration: line-through !important;
+}
